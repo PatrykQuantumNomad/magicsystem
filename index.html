@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Magic System — AI Engineering & AI Software Factories</title>
+  <meta name="description" content="Patryk Golabek, AI Engineer. I design and build production AI systems — agentic workflows, RAG, evaluation, and AI software factories that turn tickets into shipped, reviewed code.">
+  <link rel="canonical" href="https://magicsystem.ai/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://magicsystem.ai/">
+  <meta property="og:title" content="Magic System — AI Engineering & AI Software Factories">
+  <meta property="og:description" content="Production AI systems, agentic workflows, and AI software factories — designed and built by Patryk Golabek.">
+  <meta name="theme-color" content="#0e0d0b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Magic System",
+    "url": "https://magicsystem.ai/",
+    "founder": { "@type": "Person", "name": "Patryk Golabek", "jobTitle": "AI Engineer" },
+    "description": "AI engineering consulting: production LLM systems, agentic workflows, evaluation, and AI software factories."
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <a class="brand" href="/" aria-label="Magic System home">
+      <img src="/assets/favicon.svg" alt="" width="28" height="28">
+      <span>magic<em>system</em></span>
+    </a>
+    <nav aria-label="Primary">
+      <a href="#problems">Problems</a>
+      <a href="#factory">AI Software Factory</a>
+      <a href="#work">Engagements</a>
+      <a href="#about">About</a>
+      <a class="btn btn-sm" href="#contact">Start a project</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-copy">
+      <p class="eyebrow mono">AI Engineer · Patryk Golabek</p>
+      <h1>Any sufficiently advanced system is <em>indistinguishable from magic.</em></h1>
+      <p class="lede">I build the system behind the magic. Production-grade AI — agents, retrieval, evaluation, and full <strong>AI software factories</strong> that take work from ticket to tested, reviewed, shipped code.</p>
+      <div class="cta-row">
+        <a class="btn" href="#contact">Book a working session</a>
+        <a class="btn btn-ghost" href="#factory">See the factory →</a>
+      </div>
+      </div>
+
+      <div class="terminal" aria-hidden="true">
+        <div class="term-bar"><span></span><span></span><span></span><b class="mono">factory.log</b></div>
+        <pre class="mono"><span class="dim">09:14:02</span> <span class="ok">▸ intake</span>    PROJ-482 "Add SSO to admin"
+<span class="dim">09:14:09</span> <span class="ok">▸ context</span>   14 files · 3 ADRs · contracts
+<span class="dim">09:14:31</span> <span class="ok">▸ plan</span>      4 phases · <span class="amb">awaiting approval</span>
+<span class="dim">09:22:47</span> <span class="ok">▸ build</span>     agent implementing phase 2/4
+<span class="dim">09:31:15</span> <span class="ok">▸ verify</span>    212 tests ✓ · lint ✓ · sec ✓
+<span class="dim">09:32:03</span> <span class="ok">▸ review</span>    standards ✓ · spec ✓ · 1 suggestion
+<span class="dim">09:32:40</span> <span class="amb">▸ ship</span>      PR #1207 → human sign-off<span class="cursor">▍</span></pre>
+      </div>
+    </section>
+
+    <!-- PROBLEMS -->
+    <section id="problems" class="section">
+      <div class="section-head">
+        <p class="eyebrow mono">01 — Problems I solve</p>
+        <h2>Your AI demo works. <em>Production doesn't.</em></h2>
+        <p>Most AI initiatives stall in the gap between a promising prototype and a system people trust. That gap is an engineering problem — and it's the one I work on.</p>
+      </div>
+      <ol class="problems">
+        <li>
+          <h3>“It works in the notebook.”</h3>
+          <p>Prototypes that collapse under real data, real users, and real latency budgets. I turn them into observable, testable services with clear failure modes.</p>
+        </li>
+        <li>
+          <h3>“We can't tell if it's getting better.”</h3>
+          <p>No evals, no baselines, prompt changes shipped on vibes. I build evaluation harnesses, golden datasets, and regression gates so quality is measured, not guessed.</p>
+        </li>
+        <li>
+          <h3>“The agent goes off the rails.”</h3>
+          <p>Agentic workflows that loop, hallucinate tools, or burn budget. I design bounded agents with explicit contracts, guardrails, human checkpoints, and traces you can debug.</p>
+        </li>
+        <li>
+          <h3>“Our engineers use AI, but delivery didn't speed up.”</h3>
+          <p>Individual copilots don't change a delivery system. I redesign the system itself — the AI software factory — so AI compounds across the whole SDLC.</p>
+        </li>
+        <li>
+          <h3>“RAG answers are confidently wrong.”</h3>
+          <p>Retrieval that misses, chunks that mislead, no citations. I fix ingestion, retrieval, ranking, and grounding — and prove it with evals.</p>
+        </li>
+        <li>
+          <h3>“Costs and latency are out of control.”</h3>
+          <p>Model routing, caching, batching, and right-sizing so you pay for intelligence where it matters and nowhere else.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- FACTORY -->
+    <section id="factory" class="section factory">
+      <div class="section-head">
+        <p class="eyebrow mono">02 — The AI Software Factory</p>
+        <h2>From ticket to shipped code, <em>on rails.</em></h2>
+        <p>An AI software factory is an engineered delivery pipeline where coding agents do the heavy lifting and humans stay in control of intent, approval, and judgement. Not a chatbot in your IDE — a system with stages, contracts, and quality gates.</p>
+      </div>
+
+      <div class="pipeline" role="list">
+        <div class="stage" role="listitem"><span class="mono n">01</span><h3>Intake</h3><p>Tickets become AI-ready work packets: intent, acceptance criteria, constraints, verification contract.</p></div>
+        <div class="stage" role="listitem"><span class="mono n">02</span><h3>Context</h3><p>Repo maps, ADRs, standards, and domain knowledge assembled so agents work from facts, not guesses.</p></div>
+        <div class="stage" role="listitem"><span class="mono n">03</span><h3>Plan</h3><p>Phased implementation plans with risks and evidence expectations. A human approves before code is written.</p></div>
+        <div class="stage" role="listitem"><span class="mono n">04</span><h3>Build</h3><p>Coding agents implement in isolated worktrees, test-first, following your repo's own conventions.</p></div>
+        <div class="stage" role="listitem"><span class="mono n">05</span><h3>Verify</h3><p>Tests, linters, security and quality scans, E2E checks — automated gates every change must pass.</p></div>
+        <div class="stage" role="listitem"><span class="mono n">06</span><h3>Review &amp; Ship</h3><p>Independent AI review against standards and spec, then a clean PR for human sign-off.</p></div>
+      </div>
+
+      <div class="factory-grid">
+        <div>
+          <h3>What you get</h3>
+          <ul class="checks">
+            <li>A working factory wired into your Git, CI/CD, and issue tracker</li>
+            <li>Reusable skills, agent guidance and repo harnesses for your codebase</li>
+            <li>Quality gates and audit trails your security team will sign off on</li>
+            <li>Metrics: cycle time, acceptance rate, rework, cost per change</li>
+            <li>Your team trained to operate and extend it</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Principles</h3>
+          <ul class="checks">
+            <li><b>Humans own intent.</b> Agents own toil.</li>
+            <li><b>Evidence over vibes.</b> Every step leaves an artifact.</li>
+            <li><b>Bounded autonomy.</b> Clear checkpoints, no runaway agents.</li>
+            <li><b>Model-agnostic.</b> Swap models without rebuilding the line.</li>
+            <li><b>Start small.</b> One repo, one workflow, then scale.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGAGEMENTS -->
+    <section id="work" class="section">
+      <div class="section-head">
+        <p class="eyebrow mono">03 — Ways to work together</p>
+        <h2>Pick the shape that fits <em>the problem.</em></h2>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <p class="mono tag">2 weeks</p>
+          <h3>AI Engineering Assessment</h3>
+          <p>A hands-on review of your AI system or delivery process. You get a prioritised roadmap, architecture recommendations, and the quick wins worth doing first.</p>
+        </article>
+        <article class="card featured">
+          <p class="mono tag">6–10 weeks</p>
+          <h3>AI Software Factory Build</h3>
+          <p>Design and stand up an AI software factory on a pilot team: work packets, agent harnesses, quality gates, review, and metrics — running on your real backlog.</p>
+        </article>
+        <article class="card">
+          <p class="mono tag">Project-based</p>
+          <h3>Production AI Delivery</h3>
+          <p>End-to-end delivery of an AI capability — agents, RAG, evaluation, deployment, and observability — built to be owned by your team.</p>
+        </article>
+        <article class="card">
+          <p class="mono tag">Ongoing</p>
+          <h3>Fractional AI Engineering Lead</h3>
+          <p>Senior AI engineering leadership on retainer: architecture decisions, code review, hiring support, and keeping your AI roadmap honest.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section class="section stack">
+      <p class="eyebrow mono">Toolbox</p>
+      <ul class="chips mono">
+        <li>LLM agents</li><li>Claude &amp; OpenAI APIs</li><li>MCP</li><li>RAG</li><li>Evals</li>
+        <li>Python</li><li>TypeScript</li><li>Kubernetes</li><li>AWS</li><li>CI/CD</li>
+        <li>Observability</li><li>Vector search</li><li>Prompt &amp; context engineering</li>
+      </ul>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="section-head">
+        <p class="eyebrow mono">04 — About</p>
+        <h2>Engineer first. <em>AI second.</em></h2>
+      </div>
+      <div class="about-body">
+        <p>I'm <strong>Patryk Golabek</strong>, an AI Engineer with a background in software architecture, cloud-native platforms, and large-scale delivery. I've spent my career building systems that have to work on Monday morning — and I bring that same discipline to AI.</p>
+        <p>Magic System is my practice for one thing: helping teams cross from impressive AI demos to dependable AI systems — and to rebuild how software itself gets made, with AI as part of the production line.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2>Got an AI problem that <em>won't stay solved?</em></h2>
+      <p>Tell me what you're building and where it hurts. I'll reply within two business days.</p>
+      <div class="cta-row center">
+        <a class="btn" href="mailto:hello@magicsystem.ai?subject=AI%20engineering%20project">hello@magicsystem.ai</a>
+        <a class="btn btn-ghost" href="https://github.com/PatrykQuantumNomad" rel="me noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/patrykgolabek/" rel="me noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot mono">
+    <span>© <span id="y">2026</span> Magic System</span>
+    <span>magicsystem.ai</span>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
