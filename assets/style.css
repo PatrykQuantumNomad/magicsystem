@@ -254,7 +254,6 @@ main > section [class$="-head"] p { color: var(--ink-2); font-size: var(--fs-int
 .budget-rows dd { margin: 0; display: grid; gap: 8px; }
 .price { font-size: var(--fs-price); font-weight: 850; font-variation-settings: "wdth" 80; letter-spacing: -.03em; line-height: 1; font-variant-numeric: tabular-nums; }
 .price small { font-size: var(--fs-intro); font-weight: 500; letter-spacing: 0; color: var(--ink-2); margin-left: 8px; font-variation-settings: "wdth" 100; }
-.price .from { font-size: var(--fs-intro); font-weight: 500; letter-spacing: 0; color: var(--ink-2); margin-right: 6px; font-variation-settings: "wdth" 100; }
 .terms { color: var(--ink-2); max-width: 46ch; }
 
 /* ---------- Flight log ---------- */
