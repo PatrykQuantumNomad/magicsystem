@@ -42,12 +42,42 @@ typography:
     fontSize: "clamp(18px, 1.5vw, 21px)"
     fontWeight: 400
     lineHeight: 1.55
+  statement:
+    fontFamily: "Archivo, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(20px, 2vw, 26px)"
+    fontWeight: 500
+    lineHeight: 1.4
+    letterSpacing: "-0.01em"
+  close:
+    fontFamily: "Archivo, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(40px, 6vw, 84px)"
+    fontWeight: 800
+    lineHeight: 1
+    letterSpacing: "-0.03em"
+    fontVariation: "\"wdth\" 82"
+  item:
+    fontFamily: "Archivo, Helvetica Neue, Arial, sans-serif"
+    fontSize: "22px"
+    fontWeight: 800
+    lineHeight: 1.15
+    letterSpacing: "-0.015em"
+    fontVariation: "\"wdth\" 90"
+  intro:
+    fontFamily: "Archivo, Helvetica Neue, Arial, sans-serif"
+    fontSize: "19px"
+    fontWeight: 400
+    lineHeight: 1.55
   body:
     fontFamily: "Archivo, Helvetica Neue, Arial, sans-serif"
     fontSize: "17px"
     fontWeight: 400
     lineHeight: 1.55
     fontVariation: "\"wdth\" 100"
+  small:
+    fontFamily: "Archivo, Helvetica Neue, Arial, sans-serif"
+    fontSize: "15px"
+    fontWeight: 400
+    lineHeight: 1.5
   label:
     fontFamily: "Archivo, Helvetica Neue, Arial, sans-serif"
     fontSize: "12.5px"
@@ -144,8 +174,8 @@ A cool, near-neutral paper-and-ink palette with one deep slate field, one signal
 
 ### Primary
 - **Signal Orange** (`signal`): the GO colour. The goal condition in the display headline, the current-phase dot on the rail, the rail progress cursor, the focus ring and the text caret. Contrast on paper is 3.17:1, so it is only ever display-size text or a non-text mark.
-- **Burnt Go** (`signal-fill`): the fill of every GO control and every GO stamp, and the colour of small GO text (poll cells). White on it reads 5.53:1; on paper it reads 4.73:1.
-- **Burnt Go, Pressed Deeper** (`signal-fill-hover`): GO control hover.
+- **Burnt Go** (`signal-fill`): the fill of every GO control and every GO stamp, White on it reads 5.53:1; on paper it reads 4.73:1.
+- **Burnt Go, Pressed Deeper** (`signal-fill-hover`): GO control hover, and small GO text (poll cells), which must clear 4.5:1 on the 7% signal wash.
 
 ### Secondary
 - **Console Slate** (`slate`): full-bleed fields for the flight plan and the closing call. Text on slate is `slate-ink` for reading copy, `white` for headings and active states, `slate-muted` for supporting copy and dormant markers. Rules on slate are `slate-muted` at 28% to 50% alpha; never ink rules.
@@ -181,7 +211,9 @@ A cool, near-neutral paper-and-ink palette with one deep slate field, one signal
 - **Display** (850, clamp 46px to 96px, 0.94, width 80): the single objective headline at the top of the page. Tight negative tracking (-0.035em).
 - **Headline** (800, clamp 36px to 64px, 1.0, width 92): section headings. The closing heading runs larger (clamp 40px to 84px, width 82) on slate. A heading may drop a clause to `ink-muted` at width 70 to set a rejected option against the chosen one.
 - **Title** (800, clamp 24px to 32px, width 95): phase names on the plan; manifest item names run at 22px, width 90.
-- **Body** (400, 17px, 1.55): all reading copy. Section intros run at 19px in `ink-muted`, capped at 60ch; the lede runs at clamp 18px to 21px, capped at 54ch; phase copy caps at 62ch.
+- **Statement** (500, clamp 20px to 26px, 1.4): the crew note, a short first-person statement capped at 30ch.
+- **Item** (800, 22px, width 90): manifest item names.
+- **Body** (400, 17px, 1.55): all reading copy and sheet values. **Intro** (19px) sets section intros in `ink-muted`, capped at 60ch, and the wordmark size; **Small** (15px) sets nav links, poll cells, log descriptions, channel links and the Verified-by column; the lede runs at clamp 18px to 21px, capped at 54ch; phase copy caps at 62ch.
 - **Label** (650, 12.5px, 0.07em, uppercase, width 75, tabular figures): column heads, parameter keys, sheet headers and footers, log entry kinds, factory stages, and the document ID in the header.
 - **Type** (Courier Prime 400 or 700, tabular figures): the MET clock (17px bold), rail phase list (13px), phase markers (clamp 30px to 44px bold), gate conditions (14px), and status stamps (14px bold, 0.1em, uppercase).
 
@@ -243,7 +275,7 @@ The sheet, a document clipped onto the page.
 
 ### Tables and polls
 - **Style:** a 2px ink top rule, Label-style column heads in `ink-muted`, 1px hairline row dividers, no vertical rules and no zebra striping.
-- **Poll cells:** condensed uppercase status words. No-go is struck through in `ink-muted`; hold values are plain `ink-muted`; GO is 800 weight `signal-fill`, and the chosen column carries a 7% signal wash.
+- **Poll cells:** condensed uppercase status words. No-go is struck through in `ink-muted`; hold values are plain `ink-muted`; GO is 800 weight `signal-fill-hover`, and the chosen column carries a 7% signal wash.
 - **Featured row:** a manifest row may sit on `sheet` paper, bled 20px past the table edge on both sides.
 
 ### Navigation
