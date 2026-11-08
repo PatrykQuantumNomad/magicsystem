@@ -3,217 +3,269 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Magic System — AI Engineering & AI Software Factories</title>
-  <meta name="description" content="Patryk Golabek, AI Engineer. I design and build production AI systems — agentic workflows, RAG, evaluation, and AI software factories that turn tickets into shipped, reviewed code.">
+  <title>Magic System — Patryk Golabek, AI Forward Deployed Engineer</title>
+  <meta name="description" content="Patryk Golabek is an AI Forward Deployed Engineer. He embeds with your team, works inside your repos, data and cloud, and ships agents, RAG, evals and AI software factories into production.">
   <link rel="canonical" href="https://magicsystem.ai/">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://magicsystem.ai/">
-  <meta property="og:title" content="Magic System — AI Engineering & AI Software Factories">
-  <meta property="og:description" content="Production AI systems, agentic workflows, and AI software factories — designed and built by Patryk Golabek.">
-  <meta name="theme-color" content="#0e0d0b">
+  <meta property="og:title" content="Magic System — AI Forward Deployed Engineer">
+  <meta property="og:description" content="One senior engineer, forward deployed with your team until your AI is in production.">
+  <meta name="theme-color" content="#ECEEE9">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/style.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Magic System",
-    "url": "https://magicsystem.ai/",
-    "founder": { "@type": "Person", "name": "Patryk Golabek", "jobTitle": "AI Engineer" },
-    "description": "AI engineering consulting: production LLM systems, agentic workflows, evaluation, and AI software factories."
-  }
-  </script>
+  <script src="/assets/flightplan.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="nav">
-    <a class="brand" href="/" aria-label="Magic System home">
-      <img src="/assets/favicon.svg" alt="" width="28" height="28">
-      <span>magic<em>system</em></span>
+  <!-- Mission-elapsed-time rail: fixed on desktop, top strip on mobile -->
+  <aside class="rail" aria-label="Mission timeline">
+    <div class="rail-clock">
+      <span class="type">MET</span>
+      <output class="type met" id="met" aria-live="off">T+00:00:00</output>
+    </div>
+    <ol class="rail-phases type">
+      <li data-phase="brief"><a href="#plan-brief"><b>T−1</b> Brief</a></li>
+      <li data-phase="embed"><a href="#plan-embed"><b>T+0</b> Embed</a></li>
+      <li data-phase="slice"><a href="#plan-slice"><b>T+1</b> First slice</a></li>
+      <li data-phase="burns"><a href="#plan-burns"><b>T+n</b> Burns</a></li>
+      <li data-phase="handoff"><a href="#plan-handoff"><b>EOM</b> Handoff</a></li>
+    </ol>
+    <div class="rail-track" aria-hidden="true"><i class="rail-cursor"></i></div>
+  </aside>
+
+  <header class="sheet-head">
+    <a class="mark" href="/" aria-label="Magic System, home">
+      <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M9 28 L9 13 L20 22 L31 13 L31 28" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><circle cx="20" cy="22" r="2.6" fill="currentColor"/></svg>
+      <span>Magic System</span>
     </a>
+    <p class="doc-id label">Flight plan · MSN-001 · AI forward deployed engineering</p>
     <nav aria-label="Primary">
-      <a href="#problems">Problems</a>
-      <a href="#factory">AI Software Factory</a>
-      <a href="#work">Engagements</a>
-      <a href="#about">About</a>
-      <a class="btn btn-sm" href="#contact">Start a project</a>
+      <a href="#role">The role</a>
+      <a href="#plan">Flight plan</a>
+      <a href="#payload">Payload</a>
+      <a href="#crew">Crew</a>
+      <a class="go go-sm" href="#go">GO</a>
     </nav>
   </header>
 
   <main id="main">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-copy">
-      <p class="eyebrow mono">AI Engineer · Patryk Golabek</p>
-      <h1>Any sufficiently advanced system is <em>indistinguishable from magic.</em></h1>
-      <p class="lede">I build the system behind the magic. Production-grade AI — agents, retrieval, evaluation, and full <strong>AI software factories</strong> that take work from ticket to tested, reviewed, shipped code.</p>
-      <div class="cta-row">
-        <a class="btn" href="#contact">Book a working session</a>
-        <a class="btn btn-ghost" href="#factory">See the factory →</a>
-      </div>
+    <!-- OBJECTIVE -->
+    <section class="objective" aria-labelledby="objective-h">
+      <div class="objective-copy">
+        <h1 id="objective-h">One engineer, forward deployed, until your AI is <span class="ink-go">in&nbsp;production.</span></h1>
+        <p class="lede">I’m Patryk Golabek, an <strong>AI Forward Deployed Engineer</strong>. I embed with your team, work inside your repos, data and cloud, and ship the agents, retrieval, evals and AI software factories your people run after I leave.</p>
       </div>
 
-      <div class="terminal" aria-hidden="true">
-        <div class="term-bar"><span></span><span></span><span></span><b class="mono">factory.log</b></div>
-        <pre class="mono"><span class="dim">09:14:02</span> <span class="ok">▸ intake</span>    PROJ-482 "Add SSO to admin"
-<span class="dim">09:14:09</span> <span class="ok">▸ context</span>   14 files · 3 ADRs · contracts
-<span class="dim">09:14:31</span> <span class="ok">▸ plan</span>      4 phases · <span class="amb">awaiting approval</span>
-<span class="dim">09:22:47</span> <span class="ok">▸ build</span>     agent implementing phase 2/4
-<span class="dim">09:31:15</span> <span class="ok">▸ verify</span>    212 tests ✓ · lint ✓ · sec ✓
-<span class="dim">09:32:03</span> <span class="ok">▸ review</span>    standards ✓ · spec ✓ · 1 suggestion
-<span class="dim">09:32:40</span> <span class="amb">▸ ship</span>      PR #1207 → human sign-off<span class="cursor">▍</span></pre>
+      <div class="objective-side">
+        <div class="actions">
+            <a class="go" href="#go">
+              <span class="go-stamp">GO</span>
+              <span>Start a mission</span>
+            </a>
+            <a class="link-arrow" href="#plan">Read the flight plan
+              <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3 8h9M8.5 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            </a>
+          </div>
+      <dl class="params">
+        <div class="params-head label"><span>Mission parameters</span><span>Rev. A</span></div>
+        <div><dt class="label">Crew</dt><dd>1 senior AI FDE — Patryk Golabek</dd></div>
+        <div><dt class="label">Station</dt><dd>Embedded with your team, in your tools and rituals</dd></div>
+        <div><dt class="label">Orbit</dt><dd>Your stack: repos, CI/CD, cloud, data platforms</dd></div>
+        <div><dt class="label">Payload</dt><dd>Agents · RAG · evals · AI software factory · LLM platform</dd></div>
+        <div><dt class="label">Success</dt><dd>AI running in production, measured, owned by your team</dd></div>
+        <div><dt class="label">Recovery</dt><dd>Runbooks, dashboards and a team that can fly it</dd></div>
+      </dl>
       </div>
     </section>
 
-    <!-- PROBLEMS -->
-    <section id="problems" class="section">
-      <div class="section-head">
-        <p class="eyebrow mono">01 — Problems I solve</p>
-        <h2>Your AI demo works. <em>Production doesn't.</em></h2>
-        <p>Most AI initiatives stall in the gap between a promising prototype and a system people trust. That gap is an engineering problem — and it's the one I work on.</p>
+    <!-- THE ROLE: go / no-go poll -->
+    <section id="role" class="role" aria-labelledby="role-h">
+      <div class="role-head">
+        <h2 id="role-h">Not advice. <span class="w-narrow">Not a proof of concept.</span> Deployment.</h2>
+        <p>The forward deployed engineer role started at Palantir: engineers embedded with the customer, building in the customer’s real environment. A regular developer works on one capability across many customers. A forward deployed engineer works on <em>one customer across many capabilities</em>. I do that for AI.</p>
       </div>
-      <ol class="problems">
-        <li>
-          <h3>“It works in the notebook.”</h3>
-          <p>Prototypes that collapse under real data, real users, and real latency budgets. I turn them into observable, testable services with clear failure modes.</p>
+
+      <div class="poll" role="table" aria-label="Who does what: consultant, solutions engineer, AI forward deployed engineer">
+        <div class="poll-row poll-cols" role="row">
+          <span role="columnheader" class="label">Poll</span>
+          <span role="columnheader">Consultant</span>
+          <span role="columnheader">Solutions engineer</span>
+          <span role="columnheader" class="poll-you">AI FDE</span>
+        </div>
+        <div class="poll-row" role="row">
+          <span role="rowheader">Works in your real environment</span>
+          <span role="cell" class="nogo">No-go</span><span role="cell" class="hold">Sample data</span><span role="cell" class="go-cell">GO</span>
+        </div>
+        <div class="poll-row" role="row">
+          <span role="rowheader">Writes production code</span>
+          <span role="cell" class="nogo">No-go</span><span role="cell" class="hold">Rarely</span><span role="cell" class="go-cell">GO</span>
+        </div>
+        <div class="poll-row" role="row">
+          <span role="rowheader">Owns the outcome, not the slide</span>
+          <span role="cell" class="hold">Shared</span><span role="cell" class="nogo">No-go</span><span role="cell" class="go-cell">GO</span>
+        </div>
+        <div class="poll-row" role="row">
+          <span role="rowheader">Leaves a team that can run it</span>
+          <span role="cell" class="hold">Report</span><span role="cell" class="nogo">No-go</span><span role="cell" class="go-cell">GO</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLIGHT PLAN -->
+    <section id="plan" class="plan" aria-labelledby="plan-h">
+      <div class="plan-head">
+        <h2 id="plan-h">The flight plan</h2>
+        <p>Every engagement flies the same profile. The length of each phase depends on your systems; the gates don’t change. Nothing moves to the next phase without a go/no-go.</p>
+      </div>
+
+      <ol class="phases">
+        <li class="phase" id="plan-brief" data-phase="brief">
+          <p class="phase-met type">T−1</p>
+          <div class="phase-body">
+            <h3>Mission brief</h3>
+            <p>One working session on the real problem, not a pitch. We look at your data, systems and constraints and agree on what “in production” means for you.</p>
+            <p class="phase-gate type">Gate: written objective + success measure</p>
+          </div>
+          <span class="stamp type" aria-label="Status">Planned</span>
         </li>
-        <li>
-          <h3>“We can't tell if it's getting better.”</h3>
-          <p>No evals, no baselines, prompt changes shipped on vibes. I build evaluation harnesses, golden datasets, and regression gates so quality is measured, not guessed.</p>
+        <li class="phase" id="plan-embed" data-phase="embed">
+          <p class="phase-met type">T+0</p>
+          <div class="phase-body">
+            <h3>Embed</h3>
+            <p>Access to repos, cloud, data and the people who know them. I sit with your team, join your rituals, and map the system the AI has to live in.</p>
+            <p class="phase-gate type">Gate: dev environment, data access, eval baseline</p>
+          </div>
+          <span class="stamp type" aria-label="Status">Planned</span>
         </li>
-        <li>
-          <h3>“The agent goes off the rails.”</h3>
-          <p>Agentic workflows that loop, hallucinate tools, or burn budget. I design bounded agents with explicit contracts, guardrails, human checkpoints, and traces you can debug.</p>
+        <li class="phase" id="plan-slice" data-phase="slice">
+          <p class="phase-met type">T+1</p>
+          <div class="phase-body">
+            <h3>First production slice</h3>
+            <p>A thin end-to-end path running in your infrastructure, on real data, behind your auth, with tracing on. Small, but real, and it proves the route.</p>
+            <p class="phase-gate type">Gate: slice live, observable, evaluated</p>
+          </div>
+          <span class="stamp type" aria-label="Status">Planned</span>
         </li>
-        <li>
-          <h3>“Our engineers use AI, but delivery didn't speed up.”</h3>
-          <p>Individual copilots don't change a delivery system. I redesign the system itself — the AI software factory — so AI compounds across the whole SDLC.</p>
+        <li class="phase" id="plan-burns" data-phase="burns">
+          <p class="phase-met type">T+n</p>
+          <div class="phase-body">
+            <h3>Burns</h3>
+            <p>Short, gated iterations that widen the capability: agents, retrieval, evaluation, model routing, the AI software factory. Each burn ships behind an eval and a regression gate.</p>
+            <p class="phase-gate type">Gate: evals green, cost + latency inside budget</p>
+          </div>
+          <span class="stamp type" aria-label="Status">Planned</span>
         </li>
-        <li>
-          <h3>“RAG answers are confidently wrong.”</h3>
-          <p>Retrieval that misses, chunks that mislead, no citations. I fix ingestion, retrieval, ranking, and grounding — and prove it with evals.</p>
-        </li>
-        <li>
-          <h3>“Costs and latency are out of control.”</h3>
-          <p>Model routing, caching, batching, and right-sizing so you pay for intelligence where it matters and nowhere else.</p>
+        <li class="phase" id="plan-handoff" data-phase="handoff">
+          <p class="phase-met type">EOM</p>
+          <div class="phase-body">
+            <h3>Handoff &amp; recovery</h3>
+            <p>Runbooks, dashboards, architecture decisions written down, and your engineers flying it while I’m still in the room. Then I step back.</p>
+            <p class="phase-gate type">Gate: your team operates it without me</p>
+          </div>
+          <span class="stamp type" aria-label="Status">Planned</span>
         </li>
       </ol>
     </section>
 
-    <!-- FACTORY -->
-    <section id="factory" class="section factory">
-      <div class="section-head">
-        <p class="eyebrow mono">02 — The AI Software Factory</p>
-        <h2>From ticket to shipped code, <em>on rails.</em></h2>
-        <p>An AI software factory is an engineered delivery pipeline where coding agents do the heavy lifting and humans stay in control of intent, approval, and judgement. Not a chatbot in your IDE — a system with stages, contracts, and quality gates.</p>
+    <!-- PAYLOAD -->
+    <section id="payload" class="payload" aria-labelledby="payload-h">
+      <div class="payload-head">
+        <h2 id="payload-h">Payload manifest</h2>
+        <p>What gets built during the burns. Every item is verified the same way you’d verify any production system: by measurement, not demo.</p>
       </div>
 
-      <div class="pipeline" role="list">
-        <div class="stage" role="listitem"><span class="mono n">01</span><h3>Intake</h3><p>Tickets become AI-ready work packets: intent, acceptance criteria, constraints, verification contract.</p></div>
-        <div class="stage" role="listitem"><span class="mono n">02</span><h3>Context</h3><p>Repo maps, ADRs, standards, and domain knowledge assembled so agents work from facts, not guesses.</p></div>
-        <div class="stage" role="listitem"><span class="mono n">03</span><h3>Plan</h3><p>Phased implementation plans with risks and evidence expectations. A human approves before code is written.</p></div>
-        <div class="stage" role="listitem"><span class="mono n">04</span><h3>Build</h3><p>Coding agents implement in isolated worktrees, test-first, following your repo's own conventions.</p></div>
-        <div class="stage" role="listitem"><span class="mono n">05</span><h3>Verify</h3><p>Tests, linters, security and quality scans, E2E checks — automated gates every change must pass.</p></div>
-        <div class="stage" role="listitem"><span class="mono n">06</span><h3>Review &amp; Ship</h3><p>Independent AI review against standards and spec, then a clean PR for human sign-off.</p></div>
-      </div>
+      <table class="manifest">
+        <thead>
+          <tr><th scope="col" class="label">Item</th><th scope="col" class="label">What it is</th><th scope="col" class="label">Verified by</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Agentic workflows</th><td>Bounded agents with explicit tool contracts, human checkpoints and budgets, so they finish the job instead of looping.</td><td class="verified">Traces, task success rate</td></tr>
+          <tr><th scope="row">Retrieval that cites</th><td>Ingestion, chunking, ranking and grounding fixed end to end; answers point at their sources.</td><td class="verified">Retrieval + answer evals</td></tr>
+          <tr><th scope="row">Evals &amp; regression gates</th><td>Golden datasets, baselines and CI gates, so a prompt or model change can’t quietly make things worse.</td><td class="verified">CI, per change</td></tr>
+          <tr><th scope="row">LLM platform</th><td>Model access, routing, caching and observability on Kubernetes and your cloud, with security review built in.</td><td class="verified">SLOs, cost per call</td></tr>
+          <tr class="manifest-feature">
+            <th scope="row">AI software factory</th>
+            <td>
+              <p>A delivery line where coding agents do the heavy lifting and your engineers own intent and approval. Tickets come in; reviewed pull requests come out.</p>
+              <ol class="factory label" aria-label="Factory stages">
+                <li>Intake</li><li>Context</li><li>Plan</li><li>Build</li><li>Verify</li><li>Review</li><li>Ship</li>
+              </ol>
+            </td>
+            <td class="verified">Cycle time, acceptance, rework</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-      <div class="factory-grid">
-        <div>
-          <h3>What you get</h3>
-          <ul class="checks">
-            <li>A working factory wired into your Git, CI/CD, and issue tracker</li>
-            <li>Reusable skills, agent guidance and repo harnesses for your codebase</li>
-            <li>Quality gates and audit trails your security team will sign off on</li>
-            <li>Metrics: cycle time, acceptance rate, rework, cost per change</li>
-            <li>Your team trained to operate and extend it</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Principles</h3>
-          <ul class="checks">
-            <li><b>Humans own intent.</b> Agents own toil.</li>
-            <li><b>Evidence over vibes.</b> Every step leaves an artifact.</li>
-            <li><b>Bounded autonomy.</b> Clear checkpoints, no runaway agents.</li>
-            <li><b>Model-agnostic.</b> Swap models without rebuilding the line.</li>
-            <li><b>Start small.</b> One repo, one workflow, then scale.</li>
-          </ul>
-        </div>
+    <!-- CREW -->
+    <section id="crew" class="crew" aria-labelledby="crew-h">
+      <div class="crew-record">
+        <div class="record-tab" aria-hidden="true"></div>
+        <h2 id="crew-h">Patryk Golabek</h2>
+        <p class="crew-role">AI Forward Deployed Engineer · Ontario, Canada</p>
+        <dl class="record">
+          <div><dt class="label">Service</dt><dd>17+ years shipping production software</dd></div>
+          <div><dt class="label">Command</dt><dd>Former CTO and co-founder</dd></div>
+          <div><dt class="label">Platform</dt><dd>Building production Kubernetes clusters since before 1.0</dd></div>
+          <div><dt class="label">AI systems</dt><dd>LLM agents, RAG pipelines, LangGraph, Langflow</dd></div>
+          <div><dt class="label">Open source</dt><dd>20+ public repositories</dd></div>
+        </dl>
+        <p class="record-foot label"><span>Crew record</span><span>FDE-01</span></p>
+      </div>
+      <div class="crew-note">
+        <p>AI has to run on something. Most of my career was spent on that something: cloud-native platforms, CI/CD, infrastructure as code, DevSecOps. That’s why the systems I ship survive contact with production.</p>
+        <a class="link-arrow" href="https://patrykgolabek.dev/about/" rel="me">Full background on patrykgolabek.dev
+          <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3 8h9M8.5 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        </a>
       </div>
     </section>
 
-    <!-- ENGAGEMENTS -->
-    <section id="work" class="section">
-      <div class="section-head">
-        <p class="eyebrow mono">03 — Ways to work together</p>
-        <h2>Pick the shape that fits <em>the problem.</em></h2>
+    <!-- FLIGHT LOG / PROOF -->
+    <section id="log" class="log" aria-labelledby="log-h">
+      <div class="log-head">
+        <h2 id="log-h">Flight log</h2>
+        <p>Public work you can inspect today.</p>
       </div>
-      <div class="cards">
-        <article class="card">
-          <p class="mono tag">2 weeks</p>
-          <h3>AI Engineering Assessment</h3>
-          <p>A hands-on review of your AI system or delivery process. You get a prioritised roadmap, architecture recommendations, and the quick wins worth doing first.</p>
-        </article>
-        <article class="card featured">
-          <p class="mono tag">6–10 weeks</p>
-          <h3>AI Software Factory Build</h3>
-          <p>Design and stand up an AI software factory on a pilot team: work packets, agent harnesses, quality gates, review, and metrics — running on your real backlog.</p>
-        </article>
-        <article class="card">
-          <p class="mono tag">Project-based</p>
-          <h3>Production AI Delivery</h3>
-          <p>End-to-end delivery of an AI capability — agents, RAG, evaluation, deployment, and observability — built to be owned by your team.</p>
-        </article>
-        <article class="card">
-          <p class="mono tag">Ongoing</p>
-          <h3>Fractional AI Engineering Lead</h3>
-          <p>Senior AI engineering leadership on retainer: architecture decisions, code review, hiring support, and keeping your AI roadmap honest.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- STACK -->
-    <section class="section stack">
-      <p class="eyebrow mono">Toolbox</p>
-      <ul class="chips mono">
-        <li>LLM agents</li><li>Claude &amp; OpenAI APIs</li><li>MCP</li><li>RAG</li><li>Evals</li>
-        <li>Python</li><li>TypeScript</li><li>Kubernetes</li><li>AWS</li><li>CI/CD</li>
-        <li>Observability</li><li>Vector search</li><li>Prompt &amp; context engineering</li>
+      <ul class="entries">
+        <li><a href="https://patrykgolabek.dev/guides/claude-code/"><span class="label entry-kind">Guide</span><span class="entry-name">Claude Code Guide</span><span class="entry-desc">14 chapters on building with agentic coding systems</span></a></li>
+        <li><a href="https://github.com/TranslucentComputing/kubert-assistant-lite"><span class="label entry-kind">Agent</span><span class="entry-name">kubert-assistant-lite</span><span class="entry-desc">Local Kubernetes via kind plus an AI kubectl agent</span></a></li>
+        <li><a href="https://github.com/PatrykQuantumNomad/financial-data-extractor"><span class="label entry-kind">LLM app</span><span class="entry-name">financial-data-extractor</span><span class="entry-desc">LLM-powered PDF parsing for financial statements, FastAPI + Next.js</span></a></li>
+        <li><a href="https://patrykgolabek.dev/guides/fastapi-production/"><span class="label entry-kind">Guide</span><span class="entry-name">FastAPI Production Guide</span><span class="entry-desc">13 chapters on production Python services</span></a></li>
+        <li><a href="https://patrykgolabek.dev/ai-landscape/"><span class="label entry-kind">Explorer</span><span class="entry-name">AI Landscape Explorer</span><span class="entry-desc">A visual map of AI concepts and how they connect</span></a></li>
+        <li><a href="https://github.com/PatrykQuantumNomad/pincer-ops"><span class="label entry-kind">Platform</span><span class="entry-name">pincer-ops</span><span class="entry-desc">GitOps Kubernetes platform: ArgoCD, Envoy Gateway, Sealed Secrets</span></a></li>
+        <li><a href="https://github.com/PatrykQuantumNomad/kinder"><span class="label entry-kind">Platform</span><span class="entry-name">Kinder</span><span class="entry-desc">kind, extended with MetalLB, Envoy Gateway and Headlamp</span></a></li>
+        <li><a href="https://patrykgolabek.dev/tools/"><span class="label entry-kind">Tools</span><span class="entry-name">Dockerfile, Compose, K8s &amp; GitHub Actions analyzers</span><span class="entry-desc">Client-side validators, e.g. a 52-rule Compose engine</span></a></li>
       </ul>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section about">
-      <div class="section-head">
-        <p class="eyebrow mono">04 — About</p>
-        <h2>Engineer first. <em>AI second.</em></h2>
-      </div>
-      <div class="about-body">
-        <p>I'm <strong>Patryk Golabek</strong>, an AI Engineer with a background in software architecture, cloud-native platforms, and large-scale delivery. I've spent my career building systems that have to work on Monday morning — and I bring that same discipline to AI.</p>
-        <p>Magic System is my practice for one thing: helping teams cross from impressive AI demos to dependable AI systems — and to rebuild how software itself gets made, with AI as part of the production line.</p>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section contact">
-      <h2>Got an AI problem that <em>won't stay solved?</em></h2>
-      <p>Tell me what you're building and where it hurts. I'll reply within two business days.</p>
-      <div class="cta-row center">
-        <a class="btn" href="mailto:hello@magicsystem.ai?subject=AI%20engineering%20project">hello@magicsystem.ai</a>
-        <a class="btn btn-ghost" href="https://github.com/PatrykQuantumNomad" rel="me noopener">GitHub</a>
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/patrykgolabek/" rel="me noopener">LinkedIn</a>
-      </div>
+    <!-- GO -->
+    <section id="go" class="close" aria-labelledby="go-h">
+      <h2 id="go-h">Tell me what you’re trying to put into production.</h2>
+      <p class="close-sub">A short note on the problem, your stack and your timeline is enough to call go or no-go.</p>
+      <a class="go go-lg" href="mailto:pgolabek@gmail.com?subject=Magic%20System%20%E2%80%94%20AI%20FDE%20mission">
+        <span class="go-stamp">GO</span>
+        <span>pgolabek@gmail.com</span>
+      </a>
+      <ul class="channels">
+        <li><a href="https://patrykgolabek.dev/" rel="me">patrykgolabek.dev</a></li>
+        <li><a href="https://github.com/PatrykQuantumNomad" rel="me">GitHub</a></li>
+        <li><a href="https://x.com/QuantumMentat" rel="me">X</a></li>
+        <li><a href="https://youtube.com/@QuantumMentat" rel="me">YouTube</a></li>
+        <li><a href="https://translucentcomputing.com/blog/">Writing</a></li>
+      </ul>
     </section>
   </main>
 
-  <footer class="foot mono">
-    <span>© <span id="y">2026</span> Magic System</span>
-    <span>magicsystem.ai</span>
+  <footer class="foot">
+    <span>Magic System · magicsystem.ai</span>
+    <span>“AI FDE” here means the human role. Not affiliated with Palantir.</span>
+    <span>© <span id="year">2026</span> Patryk Golabek</span>
   </footer>
-
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
