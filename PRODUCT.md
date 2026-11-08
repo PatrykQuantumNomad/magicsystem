@@ -38,7 +38,7 @@ Engagements happen inside the client's environment: their repos, CI/CD, cloud, d
 ## Capabilities and Constraints
 
 - Static site only; no forms backend. Contact is via email link.
-- Engagement shapes, durations and pricing are NOT confirmed; do not publish prices. Existing engagement copy is placeholder.
+- Published rates (confirmed 2026-11-08, USD): hourly $300/hour with a 20-hour minimum; fractional retainer from $20,000/month (about two days a week embedded). Quote in USD. Basis: notes/research/ai-fde-compensation-and-rates.md (local, gitignored). Engagement durations are not confirmed; do not publish other prices.
 - LinkedIn URL is unconfirmed — do not link it until provided.
 
 ## Brand Commitments

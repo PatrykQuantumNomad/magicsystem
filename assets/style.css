@@ -24,6 +24,7 @@
   --fs-item: 22px;
   --fs-statement: clamp(20px, 2vw, 26px);
   --fs-close: clamp(40px, 6vw, 84px);
+  --fs-price: clamp(36px, 4vw, 52px);
 
   --rail: 148px;
   --gutter: clamp(20px, 4vw, 56px);
@@ -239,6 +240,23 @@ main > section [class$="-head"] p { color: var(--ink-2); font-size: var(--fs-int
 .crew-note p { font-size: var(--fs-statement); line-height: 1.4; font-weight: 500; letter-spacing: -.01em; max-width: 30ch; }
 .crew-note .link-arrow { margin-top: 28px; }
 
+/* ---------- Mission budget ---------- */
+.budget { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
+.budget-sheet { background: var(--sheet); border: 1px solid var(--rule-strong); position: relative; }
+.budget-sheet::before { content: ""; position: absolute; top: -1px; left: 28px; width: 56px; height: 10px; background: var(--tab); border: 1px solid var(--rule-strong); border-top: 0; }
+.budget-sheet-head, .budget-sheet-foot { display: flex; justify-content: space-between; gap: 16px; padding: 14px 22px; }
+.budget-sheet-head { border-bottom: 1px solid var(--rule-strong); }
+.budget-sheet-foot { border-top: 1px solid var(--rule-strong); color: var(--ink-2); }
+.budget-rows { margin: 0; }
+.budget-rows > div { display: grid; grid-template-columns: 120px 1fr; gap: 14px; padding: 26px 22px; }
+.budget-rows > div + div { border-top: 1px solid var(--rule); }
+.budget-rows dt { color: var(--ink-2); padding-top: 12px; }
+.budget-rows dd { margin: 0; display: grid; gap: 8px; }
+.price { font-size: var(--fs-price); font-weight: 850; font-variation-settings: "wdth" 80; letter-spacing: -.03em; line-height: 1; font-variant-numeric: tabular-nums; }
+.price small { font-size: var(--fs-intro); font-weight: 500; letter-spacing: 0; color: var(--ink-2); margin-left: 8px; font-variation-settings: "wdth" 100; }
+.price .from { font-size: var(--fs-intro); font-weight: 500; letter-spacing: 0; color: var(--ink-2); margin-right: 6px; font-variation-settings: "wdth" 100; }
+.terms { color: var(--ink-2); max-width: 46ch; }
+
 /* ---------- Flight log ---------- */
 .entries { list-style: none; padding: 0; margin: 48px 0 0; border-top: 2px solid var(--rule-strong); columns: 2; column-gap: 48px; }
 .entries li { break-inside: avoid; border-bottom: 1px solid var(--rule); }
@@ -271,7 +289,7 @@ main > section [class$="-head"] p { color: var(--ink-2); font-size: var(--fs-int
 @media (max-width: 1100px) {
   .doc-id { display: none; }
   .sheet-head { grid-template-columns: auto auto; justify-content: space-between; }
-  .objective, .role, .crew { grid-template-columns: minmax(0, 1fr); }
+  .objective, .role, .crew, .budget { grid-template-columns: minmax(0, 1fr); }
   .objective { min-height: 0; align-items: start; }
   .params { max-width: 640px; }
 }
@@ -317,7 +335,9 @@ main > section [class$="-head"] p { color: var(--ink-2); font-size: var(--fs-int
   .poll-row { grid-template-columns: minmax(0, 1.25fr) repeat(3, minmax(0, 1fr)); }
   .poll-row > * { padding-left: 4px; padding-right: 4px; overflow-wrap: anywhere; }
   .poll-cols > * { font-size: 12.5px; line-height: 1.25; }
-  .params > div:not(.params-head), .record > div { grid-template-columns: 1fr; gap: 2px; }
+  .params > div:not(.params-head), .record > div, .budget-rows > div { grid-template-columns: 1fr; gap: 2px; }
+  .budget-rows dt { padding-top: 0; }
+  .budget-sheet-foot { flex-direction: column; gap: 4px; }
   .go > span:last-child { padding: 15px 16px 15px 14px; }
   .go-lg > span:last-child { padding: 18px 18px 18px 16px; font-size: 17px; }
   .entries a { grid-template-columns: 1fr; }

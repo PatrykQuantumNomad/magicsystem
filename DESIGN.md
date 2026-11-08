@@ -55,6 +55,14 @@ typography:
     lineHeight: 1
     letterSpacing: "-0.03em"
     fontVariation: "\"wdth\" 82"
+  price:
+    fontFamily: "Archivo, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(36px, 4vw, 52px)"
+    fontWeight: 850
+    lineHeight: 1
+    letterSpacing: "-0.03em"
+    fontVariation: "\"wdth\" 80"
+    fontFeature: "\"tnum\""
   item:
     fontFamily: "Archivo, Helvetica Neue, Arial, sans-serif"
     fontSize: "22px"
@@ -213,6 +221,7 @@ A cool, near-neutral paper-and-ink palette with one deep slate field, one signal
 - **Title** (800, clamp 24px to 32px, width 95): phase names on the plan; manifest item names run at 22px, width 90.
 - **Statement** (500, clamp 20px to 26px, 1.4): the crew note, a short first-person statement capped at 30ch.
 - **Item** (800, 22px, width 90): manifest item names.
+- **Price** (850, clamp 36px to 52px, width 80, tabular figures): published rates on the Mission budget sheet. The unit ("/ hour", "/ month") and "from" sit beside it in Intro size, `ink-muted`, at normal width.
 - **Body** (400, 17px, 1.55): all reading copy and sheet values. **Intro** (19px) sets section intros in `ink-muted`, capped at 60ch, and the wordmark size; **Small** (15px) sets nav links, poll cells, log descriptions, channel links and the Verified-by column; the lede runs at clamp 18px to 21px, capped at 54ch; phase copy caps at 62ch.
 - **Label** (650, 12.5px, 0.07em, uppercase, width 75, tabular figures): column heads, parameter keys, sheet headers and footers, log entry kinds, factory stages, and the document ID in the header.
 - **Type** (Courier Prime 400 or 700, tabular figures): the MET clock (17px bold), rail phase list (13px), phase markers (clamp 30px to 44px bold), gate conditions (14px), and status stamps (14px bold, 0.1em, uppercase).
