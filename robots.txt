@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /PRODUCT.md
+Disallow: /DESIGN.md
+Disallow: /README.md
+
+Sitemap: https://magicsystem.ai/sitemap.xml
